@@ -1,6 +1,5 @@
 from flask import Flask, render_template, Response, jsonify, request, session, redirect, url_for, make_response
 from flask_cors import CORS
-import cv2
 from ai_engine.detector import TrafficDetector
 from ai_engine.traffic_logic import TrafficController
 from ai_engine.radar import RadarDetector
