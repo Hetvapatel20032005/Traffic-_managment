@@ -149,6 +149,8 @@ def update_logic():
 
 # --- 🌐 WEB ROUTES ---
 
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -176,6 +178,11 @@ def logout():
 @login_required 
 def index(): 
     return render_template('dashboard.html')
+
+
+@app.route('/')
+def home():
+    return "✅ Backend Working on Render!"
 
 @app.route('/video_feed_<int:lane_id>')
 @login_required
