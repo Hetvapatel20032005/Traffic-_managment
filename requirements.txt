@@ -1,9 +1,8 @@
 flask
 flask-cors
-gunicorn
-numpy
+opencv-contrib-python-headless
+ultralytics
+torch
+torchvision
 requests
-sqlalchemy
-psycopg2-binary
-python-dotenv
-pillow
+gunicorn
